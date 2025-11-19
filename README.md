@@ -3,6 +3,8 @@
 ## How to Run
 
 ### 1. Start MySQL
+**Note**: we need to open `Docker Desktop` app first before running docker compose
+First, open this project folder and run
 ```bash
 docker-compose up -d
 ```
