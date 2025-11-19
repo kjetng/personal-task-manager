@@ -48,7 +48,6 @@ export const YourTasksPage = () => {
         </div>
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-lg">
-          {/* Filter */}
           <div className="flex items-center justify-between border-b border-gray-200 p-6">
             <div>
               Filter:
@@ -71,8 +70,6 @@ export const YourTasksPage = () => {
           </div>
           <TaskTable tasks={tasks} filter={filter} onEdit={handleOpenModal} />
         </div>
-
-        {/* Floating Add Button */}
 
         <TaskModal
           isOpen={modalOpen}

@@ -1,4 +1,3 @@
-// src/components/DeleteConfirmModal.tsx
 import { FaTimes, FaTrash } from 'react-icons/fa';
 
 interface DeleteConfirmModalProps {

@@ -48,7 +48,6 @@ public class TasksController : ControllerBase
   [HttpPut("{id}")]
   public async Task<ActionResult<TaskDto>> Update(int id, UpdateTaskDto updateDto)
   {
-    // print updateDto to console for debugging
     Console.WriteLine($"UpdateTaskDto: Name={updateDto.Name}, DueDate={updateDto.DueDate}, Status={updateDto.Status}");
     var task = _mapper.Map<TaskItem>(updateDto);
     task.Id = id;

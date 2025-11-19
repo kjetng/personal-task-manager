@@ -10,7 +10,6 @@ export const useToggleStatus = (options: {
 
   return useMutation({
     mutationFn: (task: Task) => {
-      // Toggle status
       task.status = task.status === 'Completed' ? 'InProgress' : 'Completed';
       return updateTask(task.id, {
         name: task.name,
